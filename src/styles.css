@@ -8,20 +8,20 @@ body{
 }
 .grid{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
     grid-gap: 64px
 }
 .grid-2-columns{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 2fr;
 }
 .grid-3-columns-with-first-narrow{
     grid-template-columns: 1fr 2fr 2fr;
 }
 .grid-3-columns{
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10px;
 }
 .img-responsive{
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 .card{
@@ -45,6 +45,13 @@ body{
 }
 .card-footer{
     padding:0 30px 30px;
+}
+.card-header.grid{
+    grid-gap:0;
+}
+.embed{
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 .btn{
     display: block;
@@ -228,6 +235,13 @@ footer a{
     .grid{
         grid-template-columns: 1fr;
         grid-gap: 32px
+    }
+    .card-header img{
+        display: none;
+
+    }
+    .embed{
+        aspect-ratio: 16/9;
     }
 
 }
