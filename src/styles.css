@@ -21,6 +21,8 @@ body{
 .grid-3-columns{
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 10px;
+    overflow-x: auto;
+
 }
 .card-grid-column{
     grid-template-columns: 6fr 3fr;
@@ -96,7 +98,7 @@ body{
     
 }
 #galerie-picture{
-    
+    width: auto;
     height: 350px;
 }
 section{
@@ -245,7 +247,27 @@ footer a{
     color: white;
     opacity: 0.7;
 }
+.table-container{
+    width: 100%;
+    white-space: nowrap;
+    
+}
+table{
+    display: flex;
+    
+}
+tbody{
+    display: flex;
+}
+tr{
+    display: flex;
+    justify-content: center;
 
+}
+td{
+    overflow-x: auto;
+    padding: 5px;
+}
 @media(max-width: 960px){
     header{
         padding: 60px 0;
@@ -278,4 +300,5 @@ footer a{
         display: block;
         width: 100%;
     }
+    
 }
