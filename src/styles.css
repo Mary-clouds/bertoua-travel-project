@@ -11,7 +11,7 @@ body{
     grid-gap: 64px
 }
 .grid-2-columns{
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 2fr 2fr;
 }
 .grid-3-columns-with-first-narrow{
     grid-template-columns: 1fr 2fr 2fr;
@@ -20,9 +20,14 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 10px;
 }
+.card-grid-column{
+    grid-template-columns: 6fr 3fr;
+
+}
 .img-responsive{
     width: 100%;
     display: block;
+    border-radius: 8px;
 }
 .card{
     background: white;
@@ -52,6 +57,11 @@ body{
 .embed{
     width: 100%;
     aspect-ratio: 1/1;
+    transition: transform 0.3s ease-in-out ;
+}
+.embed:hover{
+    transform: scale(2);
+  
 }
 .btn{
     display: block;
@@ -68,12 +78,24 @@ body{
 }
 .coder-credit{
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 10px;
     color: rgb(255, 106, 0);
 }
 .text-center{
     text-align: center;
+    padding-top: 10px;
+}
+#image-for-text{
+    transition: transform 0.3s ease-in-out ;
+}
+#image-for-text:hover{
+    transform: scale(2);
+    
+}
+#galerie-picture{
+    
+    height: 350px;
 }
 section{
     max-width: 100%;
@@ -97,6 +119,7 @@ main h2{
     color: #272044;
     text-transform: uppercase;
     margin: 0;
+    text-align: center;
 
 }
 main h3{
@@ -105,6 +128,8 @@ main h3{
     line-height: 1.5;
     color: #272044;
     margin: 0;
+    text-align: center;
+
 
 }
 
@@ -133,6 +158,7 @@ main p{
     opacity: 0.7;
 
 }
+
 header{
     background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("../images/landschaft.jpg");
     background-repeat: no-repeat;
@@ -185,6 +211,7 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+   
 }
 footer h3{
     font-weight: 700;
@@ -200,9 +227,7 @@ footer p{
     line-height: 24px;
     opacity: 0.7;
     margin: 0;
-    padding-left: 6px;
-
-  
+    padding-left: 6px; 
 }
 footer ul{
     padding: 0;
@@ -243,5 +268,9 @@ footer a{
     .embed{
         aspect-ratio: 16/9;
     }
-
+    img{
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+    }
 }
