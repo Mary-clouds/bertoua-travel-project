@@ -268,6 +268,12 @@ td{
     overflow-x: auto;
     padding: 5px;
 }
+td img{
+    transition: transform 0.3s ease-in-out ;
+}
+td img:hover{
+    filter: contrast(50%) ;
+}
 @media(max-width: 960px){
     header{
         padding: 60px 0;
