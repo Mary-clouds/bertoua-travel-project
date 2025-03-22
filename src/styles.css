@@ -1,9 +1,11 @@
 body{
     font-family: "Poppins", sans-serif;
     background-color: #272044;
+    max-width: 1400px;
+
 }
 .container{
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .grid{
@@ -65,7 +67,7 @@ body{
 }
 .btn{
     display: block;
-    color: white;
+    color: yellow;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
@@ -101,6 +103,7 @@ section{
     max-width: 100%;
     margin: 0 auto;
     padding: 100px;
+    
 
 }
 section.secondary{
@@ -229,6 +232,7 @@ footer p{
     margin: 0;
     padding-left: 6px; 
 }
+
 footer ul{
     padding: 0;
 }
@@ -241,6 +245,7 @@ footer a{
     color: white;
     opacity: 0.7;
 }
+
 @media(max-width: 960px){
     header{
         padding: 60px 0;
